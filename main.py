@@ -4,7 +4,7 @@ class BankAccount:
         self.account_number = account_number
         self.name = name
         self.balance = balance
-    
+    # deposit method 
     def deposit(self, amount):
         if amount <= 0:
             raise ValueError("Deposit amount must be greater than zero.")
