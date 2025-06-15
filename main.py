@@ -20,7 +20,8 @@ class BankAccount:
         self.balance -= amount
         self.save()
         print(f"Withdrew {amount}. Current balance: {self.balance}")
-    
+
+    # save account details 
     def save(self):
         """Save account details to file."""
         with open("account.txt", "w") as f:
