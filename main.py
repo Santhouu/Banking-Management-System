@@ -26,7 +26,8 @@ class BankAccount:
         """Save account details to file."""
         with open("account.txt", "w") as f:
             f.write(f"{self.account_number},{self.name},{self.balance}")
-    
+
+    #lode the file to take created details of customer 
     @classmethod
     def load(cls):
         """Load account details from file."""
